@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>5.0</version>
+    <date>2020-08-16T19:57:24Z</date>
+    <groups>
+        <group>
+            <name>Security</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Mikrotik - Custom SNMP</template>
+            <name>Mikrotik - Custom SNMP</name>
+            <groups>
+                <group>
+                    <name>Security</name>
+                </group>
+            </groups>
+            <items>
+                <item>
+                    <name>PPS on SFPPLUS1</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>iso.3.6.1.2.1.2.2.1.11.1</snmp_oid>
+                    <key>zabbix.pps.sfpplus1</key>
+                    <value_type>FLOAT</value_type>
+                </item>
+            </items>
+        </template>
+    </templates>
+</zabbix_export>
